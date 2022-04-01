@@ -20,26 +20,26 @@ class pokemon { //Clase para el objeto Pokémon
 
 //Se instancian los objetos y se agregan al arreglo
 
-LISTA_POKEMONES.push( new pokemon("Bulbasaur", 001, ["Planta", "Veneno"], "Sí", "Primera"));
-LISTA_POKEMONES.push( new pokemon("Ivysaur", 002, ["Planta", "Veneno"], "Sí", "Primera"));
-LISTA_POKEMONES.push( new pokemon("Venusaur", 003, ["Planta", "Veneno"], "No", "Primera"));
-LISTA_POKEMONES.push( new pokemon("Charmander", 004, "Fuego", "Sí", "Primera"));
-LISTA_POKEMONES.push( new pokemon("Charmeleon", 005, "Fuego", "Sí", "Primera"));
-LISTA_POKEMONES.push( new pokemon("Charizard", 006, ["Fuego", "Volador"], "No", "Primera"));
-LISTA_POKEMONES.push( new pokemon("Squirtle", 007, "Agua", "Sí", "Primera"));
+LISTA_POKEMONES.push( new pokemon("Bulbasaur", "001", ["Planta", "Veneno"], "Sí", "Primera"));
+LISTA_POKEMONES.push( new pokemon("Ivysaur", "002", ["Planta", "Veneno"], "Sí", "Primera"));
+LISTA_POKEMONES.push( new pokemon("Venusaur", "003", ["Planta", "Veneno"], "No", "Primera"));
+LISTA_POKEMONES.push( new pokemon("Charmander", "004", "Fuego", "Sí", "Primera"));
+LISTA_POKEMONES.push( new pokemon("Charmeleon", "005", "Fuego", "Sí", "Primera"));
+LISTA_POKEMONES.push( new pokemon("Charizard", "006", ["Fuego", "Volador"], "No", "Primera"));
+LISTA_POKEMONES.push( new pokemon("Squirtle", "007", "Agua", "Sí", "Primera"));
 LISTA_POKEMONES.push( new pokemon("Wartortle", "008", "Agua", "Sí", "Primera"));
 LISTA_POKEMONES.push( new pokemon("Blastoise", "009", "Agua", "No", "Primera"));
-LISTA_POKEMONES.push( new pokemon("Caterpie", 010, "Bicho", "Sí", "Primera"));
-LISTA_POKEMONES.push( new pokemon("Metapod", 011, "Bicho", "Sí", "Primera"));
-LISTA_POKEMONES.push( new pokemon("Butterfree", 012, ["Bicho", "Volador"], "No", "Primera"));
-LISTA_POKEMONES.push( new pokemon("Weedle", 013, ["Bicho", "Veneno"], "Sí", "Primera"));
-LISTA_POKEMONES.push( new pokemon("Kakuna", 014, ["Bicho", "Veneno"], "Sí", "Primera"));
-LISTA_POKEMONES.push( new pokemon("Beedrill", 015, ["Bicho", "Veneno", "No", "Primera"]));
-LISTA_POKEMONES.push( new pokemon("Pidgey", 016, ["Normal", "Volador"], "Sí", "Primera"));
+LISTA_POKEMONES.push( new pokemon("Caterpie", "010", "Bicho", "Sí", "Primera"));
+LISTA_POKEMONES.push( new pokemon("Metapod", "011", "Bicho", "Sí", "Primera"));
+LISTA_POKEMONES.push( new pokemon("Butterfree", "012", ["Bicho", "Volador"], "No", "Primera"));
+LISTA_POKEMONES.push( new pokemon("Weedle", "013", ["Bicho", "Veneno"], "Sí", "Primera"));
+LISTA_POKEMONES.push( new pokemon("Kakuna", "014", ["Bicho", "Veneno"], "Sí", "Primera"));
+LISTA_POKEMONES.push( new pokemon("Beedrill", "015", ["Bicho", "Veneno", "No", "Primera"]));
+LISTA_POKEMONES.push( new pokemon("Pidgey", "016", ["Normal", "Volador"], "Sí", "Primera"));
 LISTA_POKEMONES.push( new pokemon("Pidgeot", "018", ["Normal", "Volador"], "No", "Primera"));
-LISTA_POKEMONES.push( new pokemon("Pidgeotto", 017, ["Normal", "Volador"], "Sí", "Primera"));
+LISTA_POKEMONES.push( new pokemon("Pidgeotto", "017", ["Normal", "Volador"], "Sí", "Primera"));
 LISTA_POKEMONES.push( new pokemon("Rattata", "019", "Normal", "Sí", "Primera"));
-LISTA_POKEMONES.push( new pokemon("Raticate", 020, "Normal", "No", "Primera"));
+LISTA_POKEMONES.push( new pokemon("Raticate", "020", "Normal", "No", "Primera"));
 
 
 //Ciclo que mostrará al usuario el/los Pokémon que busque
