@@ -91,7 +91,7 @@ function verificarEntrada() { //Función que verifica los datos que ingrese el u
         //Se cambia a visible el cuadro con las caracteristicas de cada Pokémon, es decir, los valores del objeto
         descripcion.style.display = "flex";
     } else {
-        alert("Dato no incorrecto");
+        alert("Dato incorrecto");
     }
 }
 
