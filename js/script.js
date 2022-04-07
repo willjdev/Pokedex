@@ -4,7 +4,7 @@
 
 //VARIABLES
 const LISTA_POKEMONES = []; //Lista que contendrá los objetos/pokemones
-let busqueda, entrada, objeto; //Variables a utilizar en la búsqueda
+let entrada, objeto; //Variables a utilizar en la búsqueda
 
 //DOM
 let entradaUsuario = document.getElementById("busquedaUsuario");
@@ -58,7 +58,7 @@ LISTA_POKEMONES.push( new pokemon("Raticate", "020", "Normal", "No", "Primera", 
 
 //EVENTO
 boton.onclick = verificarEntrada;//activará la búsqueda del Pokémon cuando el usuario haga click en el botón BUSCAR
-entradaUsuario.addEventListener("keypress", function(key) {
+entradaUsuario.addEventListener("keypress", function(key) {//activará al búsqueda cuando el usuario presione ENTER
     if (key.keyCode === 13) {
         key.preventDefault();
         verificarEntrada();
@@ -85,7 +85,7 @@ function verificarEntrada() { //Función que verifica los datos que ingrese el u
         //Se agrega el atributo src al elemento img con la imagen del Pokémon
         pokeImagen.src = objeto.imagen;
 
-        /* document.getElementById("imagen").src = objeto.imagen; */
+        /* document.getElementById("imagen").src = objeto.imagen; */ //Esta línea la utilizaré después
         
 
         //Se cambia a visible el cuadro con las caracteristicas de cada Pokémon, es decir, los valores del objeto
