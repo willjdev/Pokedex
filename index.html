@@ -1,13 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokédex!</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./images/pokebola.png" type="image/x-icon">
 </head>
+
 <body>
-    <h1>Pokémones disponibles para búsqueda</h1>
+    <header class="header">
+        <nav>
+            <div>
+                <a href="index.html"><img src="./images/pokemon_logo.svg.png" alt="logo"></a>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <form action="" class="form">
+            <label for="busquedaUsuario">¿Cuál Pokémon quieres buscar?</label>
+            <input type="text" id="busquedaUsuario" name="busqueda">
+            <input type="button" value="BUSCAR" id="btnBusqueda">
+        </form>
+        <div id="descripcion">
+            <div id="imagenPokemon">
+                <!-- <img id="imagen" src="" alt="pokemon"> --> <!-- Creado este elemento con JS -->
+            </div>
+
+            <ul id="caracteristicas">
+                <li>ID: <p id="idPokemon"></p></li>
+                <li>Nombre: <p id="nombrePokemon"></p></li>
+                <li>Tipo: <p id="tipoPokemon"></p></li>
+                <li>Evolución: <p id="evolucionPokemon"></p></li>
+                <li>Generación: <p id="generacionPokemon"></p></li>
+            </ul>
+        </div>
+    </main>
+    <footer class="footer">
+
+    </footer>
+
+    <!-- <h1>Pokémones disponibles para búsqueda</h1>
     <ul>
         <li>Bulbasaur</li>
         <li>Ivysaur</li>
@@ -29,7 +64,8 @@
         <li>Pidgeot</li>
         <li>Rattata</li>
         <li>Raticate</li>
-    </ul>
+    </ul> -->
     <script src="./js/script.js"></script>
 </body>
+
 </html>

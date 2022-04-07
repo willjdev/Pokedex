@@ -1,0 +1,25 @@
+{
+  "name": "pokedex",
+  "version": "1.0.0",
+  "description": "A complete pokedex",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mirmooj/Pokedex.git"
+  },
+  "author": "William Jaimes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mirmooj/Pokedex/issues"
+  },
+  "homepage": "https://github.com/mirmooj/Pokedex#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
