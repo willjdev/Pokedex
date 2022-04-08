@@ -16,10 +16,6 @@ let tipoSalida = document.getElementById("tipoPokemon");
 let evolucionSalida = document.getElementById("evolucionPokemon");
 let generacionSalida = document.getElementById("generacionPokemon");
 
-//Creacion de elemento img y adición al documento
-let pokeImagen = document.createElement("img");
-    document.getElementById("imagenPokemon").appendChild(pokeImagen);
-
 
 //CLASS
 class pokemon { //Clase para el objeto Pokémon
@@ -56,9 +52,9 @@ LISTA_POKEMONES.push( new pokemon("Pidgeotto", "017", ["Normal", " Volador"], "S
 LISTA_POKEMONES.push( new pokemon("Rattata", "019", "Normal", "Sí", "Primera", "./images/pokemones/019.png"));
 LISTA_POKEMONES.push( new pokemon("Raticate", "020", "Normal", "No", "Primera", "./images/pokemones/020.png"));
 
-//EVENTO
+//EVENTOS
 boton.onclick = verificarEntrada;//activará la búsqueda del Pokémon cuando el usuario haga click en el botón BUSCAR
-entradaUsuario.addEventListener("keypress", function(key) {//activará al búsqueda cuando el usuario presione ENTER
+entradaUsuario.addEventListener("keypress", function(key) {//activará la búsqueda cuando el usuario presione ENTER
     if (key.keyCode === 13) {
         key.preventDefault();
         verificarEntrada();
@@ -82,14 +78,14 @@ function verificarEntrada() { //Función que verifica los datos que ingrese el u
         evolucionSalida.innerHTML = objeto.evolucion;
         generacionSalida.innerHTML = objeto.generacion;
 
-        //Se agrega el atributo src al elemento img con la imagen del Pokémon
-        pokeImagen.src = objeto.imagen;
-
-        /* document.getElementById("imagen").src = objeto.imagen; */ //Esta línea la utilizaré después
+        //Se modifica el atributo src al elemento img con la imagen del Pokémon buscado
+        document.getElementById("imagen").src = objeto.imagen;
         
-
         //Se cambia a visible el cuadro con las caracteristicas de cada Pokémon, es decir, los valores del objeto
         descripcion.style.display = "flex";
+
+        //Se deja en blanco el input para las siguientes búsquedas
+        entradaUsuario.value = "";
     } else {
         alert("Dato incorrecto");
     }

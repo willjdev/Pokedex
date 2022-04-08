@@ -42,7 +42,8 @@ body {
   width: 30%;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center; }
+  align-items: center;
+  text-align: center; }
 
 #busquedaUsuario {
   width: 60%;
