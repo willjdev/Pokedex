@@ -12,15 +12,28 @@
 
 <body>
     <header class="header">
+        <div class="whiteSpace">
+
+        </div>
         <nav>
             <div>
                 <a href="index.html"><img src="./images/pokemon_logo.svg.png" alt="logo"></a>
             </div>
         </nav>
+        <form id="idioma">
+            <div class="enunciado">
+                <p class="enunIdioma">Lenguaje</p>
+            </div>
+            <select name="idioma" id="seleccionIdioma">
+                <option value disabled selected>Elige tu idioma</option>
+                <option value="0">Español</option>
+                <option value="1">English</option>
+            </select>
+        </form>
     </header>
     <main class="main">
         <form action="" class="form">
-            <label for="busquedaUsuario">¿Cuál Pokémon quieres buscar?</label>
+            <label id ="formLabel" for="busquedaUsuario">¿Cuál Pokémon quieres buscar?</label>
             <input type="text" id="busquedaUsuario" name="busqueda">
             <input type="button" value="BUSCAR" id="btnBusqueda">
         </form>
@@ -29,11 +42,33 @@
                 <img id="imagen" src="" alt="pokemon">
             </div>
             <ul id="caracteristicas">
-                <li>ID: <p id="idPokemon"></p></li>
-                <li>Nombre: <p id="nombrePokemon"></p></li>
-                <li>Tipo: <p id="tipoPokemon"></p></li>
-                <li>Evolución: <p id="evolucionPokemon"></p></li>
-                <li>Generación: <p id="generacionPokemon"></p></li>
+                <li id="liID">ID: <p id="idPokemon"></p>
+                </li>
+                <li id="liNombre">Nombre: <p id="nombrePokemon"></p>
+                </li>
+                <li id="liTipo">Tipo: <p id="tipoPokemon"></p>
+                </li>
+                <li id="liEvol">Evolución: <p id="evolucionPokemon"></p>
+                </li>
+                <li id="liGen">Generación: <p id="generacionPokemon"></p>
+                </li>
+            </ul>
+        </div>
+        <div id="descripcionEng">
+            <div id="imagenPokemonEng">
+                <img id="imagenEng" src="" alt="pokemon">
+            </div>
+            <ul id="caracteristicasEng">
+                <li>ID: <p id="idPokemonEng"></p>
+                </li>
+                <li>Name: <p id="nombrePokemonEng"></p>
+                </li>
+                <li>Type: <p id="tipoPokemonEng"></p>
+                </li>
+                <li>Evolution: <p id="evolucionPokemonEng"></p>
+                </li>
+                <li>Generation: <p id="generacionPokemonEng"></p>
+                </li>
             </ul>
         </div>
     </main>

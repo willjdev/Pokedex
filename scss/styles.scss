@@ -18,17 +18,25 @@ body {
 
 //NAV
 .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
-    //border: solid 1px red;
+    background: repeating-linear-gradient(
+        315deg,
+        #262626 0px,
+        #303030 40px,
+        #262626 40px,
+        #303030 80px
+    );
+    .whiteSpace {
+        width: 30%;
+        //border: solid 1px red;
+    }
     nav {
+        //border: solid 1px red;
+        width: 30%;
         height: 100%;
-        background: repeating-linear-gradient(
-            315deg,
-            #262626 0px,
-            #303030 40px,
-            #262626 40px,
-            #303030 80px
-        );
         div {
             a {
                 display: flex;
@@ -41,6 +49,31 @@ body {
                 }
             }
         }
+    }
+}
+#idioma {
+    //border: solid 1px red;
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    font-family: $pokefont;
+    height: 30%;
+    .enunciado {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        right: 0.7rem;
+        width: 50%;
+        .enunIdioma {
+            color: #f0f0f0;
+        }
+    }
+    #seleccionIdioma {
+        font-family: $pokefont;
+        display: block;
+        width: 35%;
+        height: 100%;
     }
 }
 
@@ -92,11 +125,35 @@ body {
     border-radius: 5px;
     background-color: rgba($color: #f0f0f0, $alpha: 0.9);
 }
+#descripcionEng {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    //border: solid 1px red;
+    font-size: 0.8rem;
+    width: 30%;
+    height: auto;
+    border-radius: 5px;
+    background-color: rgba($color: #f0f0f0, $alpha: 0.9);
+}
 #imagenPokemon {
     //background-color: #262626;
     border-radius: 4px;
     width: 35%;
     height: auto;
+    //border: solid 1px red;
+    img {
+        width: 100%;
+        //border: solid 1px red;
+    }
+}
+#imagenPokemonEng {
+    //background-color: #262626;
+    border-radius: 4px;
+    width: 35%;
+    height: auto;
+
     //border: solid 1px red;
     img {
         width: 100%;
@@ -118,6 +175,30 @@ body {
         display: flex;
         justify-content: flex-start;
         font-weight: bold;
+        //margin: 0.1rem;
+        p {
+            padding-left: 4px;
+            font-weight: 100;
+        }
+    }
+}
+#caracteristicasEng {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    height: 50%;
+    //border: solid 1px red;
+    list-style: none;
+    padding-left: 0.5rem;
+    padding-bottom: 0.3rem;
+
+    li {
+        display: flex;
+        justify-content: flex-start;
+        font-weight: bold;
+
         //margin: 0.1rem;
         p {
             padding-left: 4px;

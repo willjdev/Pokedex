@@ -14,10 +14,16 @@ body {
   background-image: url(../images/fondo.jpg); }
 
 .header {
-  width: 100%; }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background: repeating-linear-gradient(315deg, #262626 0px, #303030 40px, #262626 40px, #303030 80px); }
+  .header .whiteSpace {
+    width: 30%; }
   .header nav {
-    height: 100%;
-    background: repeating-linear-gradient(315deg, #262626 0px, #303030 40px, #262626 40px, #303030 80px); }
+    width: 30%;
+    height: 100%; }
     .header nav div a {
       display: flex;
       flex-direction: column;
@@ -26,6 +32,27 @@ body {
       .header nav div a img {
         width: 120px;
         padding-top: 9px; }
+
+#idioma {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  font-family: Exo, monospace;
+  height: 30%; }
+  #idioma .enunciado {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    right: 0.7rem;
+    width: 50%; }
+    #idioma .enunciado .enunIdioma {
+      color: #f0f0f0; }
+  #idioma #seleccionIdioma {
+    font-family: Exo, monospace;
+    display: block;
+    width: 35%;
+    height: 100%; }
 
 .main {
   grid-area: main;
@@ -70,11 +97,29 @@ body {
   border-radius: 5px;
   background-color: rgba(240, 240, 240, 0.9); }
 
+#descripcionEng {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.8rem;
+  width: 30%;
+  height: auto;
+  border-radius: 5px;
+  background-color: rgba(240, 240, 240, 0.9); }
+
 #imagenPokemon {
   border-radius: 4px;
   width: 35%;
   height: auto; }
   #imagenPokemon img {
+    width: 100%; }
+
+#imagenPokemonEng {
+  border-radius: 4px;
+  width: 35%;
+  height: auto; }
+  #imagenPokemonEng img {
     width: 100%; }
 
 #caracteristicas {
@@ -92,6 +137,24 @@ body {
     justify-content: flex-start;
     font-weight: bold; }
     #caracteristicas li p {
+      padding-left: 4px;
+      font-weight: 100; }
+
+#caracteristicasEng {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  height: 50%;
+  list-style: none;
+  padding-left: 0.5rem;
+  padding-bottom: 0.3rem; }
+  #caracteristicasEng li {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: bold; }
+    #caracteristicasEng li p {
       padding-left: 4px;
       font-weight: 100; }
 
