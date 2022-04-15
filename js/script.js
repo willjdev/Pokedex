@@ -66,7 +66,7 @@ LISTA_POKEMONES.push( new pokemon("Raticate", "020", "Normal", "No", "Primera", 
 
 LISTA_POKEMONES_ENG.push( new pokemon("Bulbasaur", "001", ["Grass", " Poison"], "Yes", "First", "./images/pokemones/001.png"));
 LISTA_POKEMONES_ENG.push( new pokemon("Ivysaur", "002", ["Grass", " Poison"], "Yes", "First", "./images/pokemones/002.png"));
-LISTA_POKEMONES_ENG.push( new pokemon("Venusaur", "003", ["Grass", " Posion"], "No", "First", "./images/pokemones/003.png"));
+LISTA_POKEMONES_ENG.push( new pokemon("Venusaur", "003", ["Grass", " Poison"], "No", "First", "./images/pokemones/003.png"));
 LISTA_POKEMONES_ENG.push( new pokemon("Charmander", "004", "Fire ", "Yes", "First", "./images/pokemones/004.png"));
 LISTA_POKEMONES_ENG.push( new pokemon("Charmeleon", "005", "Fire ", "Yes", "First", "./images/pokemones/005.png"));
 LISTA_POKEMONES_ENG.push( new pokemon("Charizard", "006", ["Fire", " Flying"], "No", "First", "./images/pokemones/006.png"));
@@ -214,7 +214,7 @@ function historial() {//Función que agrega al localStorage el array de objetos 
     let pokemonBuscado = entradaUsuario.value;
     let clave = HISTORIAL.length;
 
-    //Se instancia el objeto búsquedasUsuario y se agrega al array
+    //Se instancia el objeto busquedasUsuarios y se agrega al array
     let entrada = new busquedasUsuario(clave, pokemonBuscado);
     HISTORIAL.push(entrada)
 
