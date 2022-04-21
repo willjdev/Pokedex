@@ -91,21 +91,14 @@ window.onload = cargaPag;//Cuando se cargue la pagina revisa el localStorage par
 
 idioma.onchange = idiomaPag;//Cambiará el idioma de la pagina de acuerdo al interés del usuario
 
-if (localStorage.getItem("idioma") == "ingles") {//Mostrará los resultados de la busqueda dependiendo del idioma elegido
-    boton.onclick = verifyEntry;
-} else {
-    boton.onclick = verificarEntrada;
-}
+//////////OPTIMIZADO//////////
+localStorage.getItem("idioma") == "ingles" ? boton.onclick = verifyEntry : boton.onclick = verificarEntrada; //Mostrará los resultados de la busqueda dependiendo del idioma elegido
 
 entradaUsuario.addEventListener("keypress", function(key) {//activará la búsqueda cuando el usuario presione ENTER
     if (key.keyCode === 13) {
         key.preventDefault();
-        if (localStorage.getItem("idioma") == "ingles") {
-            verifyEntry();
-        } else {
-            verificarEntrada();
+        localStorage.getItem("idioma") == "ingles" ? verifyEntry() : verificarEntrada();////////OPTIMIZADO///////
         }
-    }
 })
 
 
@@ -140,7 +133,13 @@ function verificarEntrada() { //Función que verifica los datos que ingrese el u
             //Se deja en blanco el input para las siguientes búsquedas
             entradaUsuario.value = "";
         } else {
-            alert("Dato incorrecto");
+            Swal.fire ({
+                icon: 'error',
+                title: "Error",
+                text: "Dato no encontrado",
+                width: '24rem'
+            })
+            entradaUsuario.value = "";
         }
 } 
 
@@ -173,17 +172,19 @@ function verifyEntry() { //Función que verifica los datos que ingrese el usuari
             //Se deja en blanco el input para las siguientes búsquedas
             entradaUsuario.value = "";
         } else {
-            alert("Wrong data");
+            Swal.fire ({
+                icon: 'error',
+                title: "Wrong",
+                text: "Data not found",
+                width: '24rem'
+            })
+            entradaUsuario.value = "";
         }
 } 
 
 
 function cargaPag() {//Función que revisará en el localStorage el ultimo idioma elegido por el usuario para colocarlo automáticamente
-    if (localStorage.getItem("idioma") == "ingles") {
-        cambioIdiomaIngles();
-    } else {
-        cambioIdiomaEspañol();
-    }
+    localStorage.getItem("idioma") == "ingles" ? cambioIdiomaIngles() : cambioIdiomaEspañol();////////OPTIMIZADO///////
 }
 
 function idiomaPag() {//Función que cambia el idioma de la página de acuerdo a la elección del usuario
