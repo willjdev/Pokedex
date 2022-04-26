@@ -133,13 +133,8 @@ function verificarEntrada() { //Función que verifica los datos que ingrese el u
             //Se deja en blanco el input para las siguientes búsquedas
             entradaUsuario.value = "";
         } else {
-            Swal.fire ({
-                icon: 'error',
-                title: "Error",
-                text: "Dato no encontrado",
-                width: '24rem'
-            })
-            entradaUsuario.value = "";
+            alertify.error('Dato no encontrado');//Alerta de la librería Alertifyjs cuando el input sea erróneo
+
         }
 } 
 
@@ -172,13 +167,7 @@ function verifyEntry() { //Función que verifica los datos que ingrese el usuari
             //Se deja en blanco el input para las siguientes búsquedas
             entradaUsuario.value = "";
         } else {
-            Swal.fire ({
-                icon: 'error',
-                title: "Wrong",
-                text: "Data not found",
-                width: '24rem'
-            })
-            entradaUsuario.value = "";
+            alertify.error('Data not found');//Alerta en inglés de la librería Alertifyjs cuando el input sea erróneo
         }
 } 
 
