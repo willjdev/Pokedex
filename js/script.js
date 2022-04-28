@@ -126,9 +126,6 @@ function verificarEntrada() { //Función que verifica los datos que ingrese el u
             //Se cambia a invisible el cuadro con las caracteristicas de cada Pokémon en inglés y a visible en español, es decir, los valores del objeto
             document.getElementById("descripcionEng").style.display = "none";
             descripcion.style.display = "flex";
-
-            //Guarda en el localStorage un historial con las búsquedas de los usuarios
-            historial();
     
             //Se deja en blanco el input para las siguientes búsquedas
             entradaUsuario.value = "";
@@ -161,9 +158,6 @@ function verifyEntry() { //Función que verifica los datos que ingrese el usuari
             descripcion.style.display = "none";
             document.getElementById("descripcionEng").style.display = "flex";
 
-            //Guarda en el localStorage un historial con las búsquedas de los usuarios
-            historial();
-    
             //Se deja en blanco el input para las siguientes búsquedas
             entradaUsuario.value = "";
         } else {
@@ -200,16 +194,5 @@ function cambioIdiomaEspañol() {//Función que cambia los textos de los element
     boton.value = "BUSCAR";
 }
 
-function historial() {//Función que agrega al localStorage el array de objetos que contiene en historial de búsquedas
-    let pokemonBuscado = entradaUsuario.value;
-    let clave = HISTORIAL.length;
 
-    //Se instancia el objeto busquedasUsuarios y se agrega al array
-    let entrada = new busquedasUsuario(clave, pokemonBuscado);
-    HISTORIAL.push(entrada)
-
-    //Se almacena en el localStorage el arreglo de objetos convertido a JSON 
-    localStorage.setItem("historial", JSON.stringify(HISTORIAL));
-
-}
 
