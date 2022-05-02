@@ -9,7 +9,7 @@ $pokefont: Exo, monospace;
 body {
     display: grid;
     grid-template-areas: "header" "main" "footer";
-    grid-template-rows: 14% auto 7%;
+    grid-template-rows: 12% auto 7%;
     width: 100vw;
     height: 100vh;
     font-family: $pokefont;
@@ -29,10 +29,6 @@ body {
         #262626 40px,
         #303030 80px
     );
-    .whiteSpace {
-        width: 30%;
-        //border: solid 1px red;
-    }
     nav {
         //border: solid 1px red;
         width: 30%;
@@ -51,52 +47,45 @@ body {
         }
     }
 }
-#idioma {
-    //border: solid 1px red;
-    width: 30%;
-    display: flex;
-    justify-content: flex-end;
-    font-family: $pokefont;
-    height: 30%;
-    .enunciado {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        position: relative;
-        right: 0.7rem;
-        width: 50%;
-        .enunIdioma {
-            color: #f0f0f0;
-        }
-    }
-    #seleccionIdioma {
-        font-family: $pokefont;
-        display: block;
-        width: 35%;
-        height: 100%;
-    }
-}
 
 .main {
     grid-area: main;
     //border: solid 1px red;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    width: 100vw;
+    height: 100%;
+}
+.mainBusqueda {
+    //border: solid 1px red;
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.busquedaBox {
+    width: 100%;
+    height: 100%;
+    //border: solid 1px red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .form {
     display: flex;
     border-radius: 5px;
     background-color: rgba($color: #f0f0f0, $alpha: 0.9);
-    height: 40%;
-    width: 30%;
+    height: 30%;
+    width: 40%;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    
-    //border: solid 1px red;
+    //border: solid 1px rgb(99, 99, 99);
 }
 #busquedaUsuario {
     width: 60%;
@@ -112,28 +101,24 @@ body {
     background-color: #e9692e;
     font-family: $pokefont;
 }
-
+.descripcionBox {
+    display: none;
+    width: 100%;
+    height: 100%;
+    //border: solid 1px blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #descripcion {
     display: none;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    //border: solid 1px red;
+    //border: solid 1px rgb(99, 99, 99);
     font-size: 0.8rem;
-    width: 30%;
-    height: auto;
-    border-radius: 5px;
-    background-color: rgba($color: #f0f0f0, $alpha: 0.9);
-}
-#descripcionEng {
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    //border: solid 1px red;
-    font-size: 0.8rem;
-    width: 30%;
-    height: auto;
+    width: 80%;
+    height: 80%;
     border-radius: 5px;
     background-color: rgba($color: #f0f0f0, $alpha: 0.9);
 }
@@ -148,26 +133,16 @@ body {
         //border: solid 1px red;
     }
 }
-#imagenPokemonEng {
-    //background-color: #262626;
-    border-radius: 4px;
-    width: 35%;
-    height: auto;
-
-    //border: solid 1px red;
-    img {
-        width: 100%;
-        //border: solid 1px red;
-    }
-}
 #caracteristicas {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    width: 100%;
-    height: 50%;
-    //border: solid 1px red;
+    width: 92%;
+    height: 30%;
+    //border: solid 1px rgb(99, 99, 99);
+    background-color: rgba($color: #f8f6f6, $alpha: 1);
+    border-radius: 5px;
     list-style: none;
     padding-left: 0.5rem;
     padding-bottom: 0.3rem;
@@ -182,30 +157,7 @@ body {
         }
     }
 }
-#caracteristicasEng {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    width: 100%;
-    height: 50%;
-    //border: solid 1px red;
-    list-style: none;
-    padding-left: 0.5rem;
-    padding-bottom: 0.3rem;
 
-    li {
-        display: flex;
-        justify-content: flex-start;
-        font-weight: bold;
-
-        //margin: 0.1rem;
-        p {
-            padding-left: 4px;
-            font-weight: 100;
-        }
-    }
-}
 .footer {
     grid-area: footer;
     /*

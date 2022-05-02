@@ -15,94 +15,45 @@
 
 <body>
     <header class="header">
-        <div class="whiteSpace">
-
-        </div>
         <nav>
             <div>
                 <a href="index.html"><img src="./images/pokemon_logo.svg.png" alt="logo"></a>
             </div>
         </nav>
-        <form id="idioma">
-            <div class="enunciado">
-                <p class="enunIdioma">Lenguaje</p>
-            </div>
-            <select name="idioma" id="seleccionIdioma">
-                <option value disabled selected></option>
-                <option value="0">Español</option>
-                <option value="1">English</option>
-            </select>
-        </form>
     </header>
     <main class="main">
-        <form action="" class="form">
-            <label id ="formLabel" for="busquedaUsuario">¿Cuál Pokémon quieres buscar?</label>
-            <input type="text" id="busquedaUsuario" name="busqueda">
-            <input type="button" value="BUSCAR" id="btnBusqueda">
-        </form>
-        <div id="descripcion">
-            <div id="imagenPokemon">
-                <img id="imagen" src="" alt="pokemon">
+        <section class="mainBusqueda">
+            <div class="busquedaBox">
+                <form action="" class="form">
+                    <label id ="formLabel" for="busquedaUsuario">Which Pokémon do you want to search ?</label>
+                    <input type="text" id="busquedaUsuario" name="busqueda">
+                    <input type="button" value="SEARCH" id="btnBusqueda">
+                </form>
             </div>
-            <ul id="caracteristicas">
-                <li id="liID">ID: <p id="idPokemon"></p>
-                </li>
-                <li id="liNombre">Nombre: <p id="nombrePokemon"></p>
-                </li>
-                <li id="liTipo">Tipo: <p id="tipoPokemon"></p>
-                </li>
-                <li id="liEvol">Evolución: <p id="evolucionPokemon"></p>
-                </li>
-                <li id="liGen">Generación: <p id="generacionPokemon"></p>
-                </li>
-            </ul>
-        </div>
-        <div id="descripcionEng">
-            <div id="imagenPokemonEng">
-                <img id="imagenEng" src="" alt="pokemon">
-            </div>
-            <ul id="caracteristicasEng">
-                <li>ID: <p id="idPokemonEng"></p>
-                </li>
-                <li>Name: <p id="nombrePokemonEng"></p>
-                </li>
-                <li>Type: <p id="tipoPokemonEng"></p>
-                </li>
-                <li>Evolution: <p id="evolucionPokemonEng"></p>
-                </li>
-                <li>Generation: <p id="generacionPokemonEng"></p>
-                </li>
-            </ul>
-        </div>
+            
+                <div id="descripcion">
+                    <div id="imagenPokemon">
+                        <img id="imagen" src="" alt="pokemon">
+                    </div>
+                    <ul id="caracteristicas">
+                        <li id="liID">ID: <p id="idPokemon"></p>
+                        </li>
+                        <li id="liNombre">Name: <p id="nombrePokemon"></p>
+                        </li>
+                        <li id="liTipo">Type: <p id="tipoPokemon"></p>
+                        </li>
+                        <li id="liHabil">Ability: <p id="habilidadPokemon"></p>
+                        </li>
+                        <li id="liPeso">Weight: <p id="pesoPokemon"></p>
+                        </li>
+                    </ul>
+                </div>
+        </section>
     </main>
     <footer class="footer">
 
     </footer>
-
-    <!-- <h1>Pokémones disponibles para búsqueda</h1>
-    <ul>
-        <li>Bulbasaur</li>
-        <li>Ivysaur</li>
-        <li>Venusaur</li>
-        <li>Charmander</li>
-        <li>Charmeleon</li>
-        <li>Charizard</li>
-        <li>Squirtle</li>
-        <li>Wartortle</li>
-        <li>Blastoise</li>
-        <li>Caterpie</li>
-        <li>Metapod</li>
-        <li>Butterfree</li>
-        <li>Weedle</li>
-        <li>Kakuna</li>
-        <li>Beedrill</li>
-        <li>Pidgey</li>
-        <li>Pidgeotto</li>
-        <li>Pidgeot</li>
-        <li>Rattata</li>
-        <li>Raticate</li>
-    </ul> -->
-    <script src="./js/script.js"></script>
+    <script type="module" src="./js/script.js"></script>
     <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
 </body>
 

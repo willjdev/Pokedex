@@ -7,7 +7,7 @@
 body {
   display: grid;
   grid-template-areas: "header" "main" "footer";
-  grid-template-rows: 14% auto 7%;
+  grid-template-rows: 12% auto 7%;
   width: 100vw;
   height: 100vh;
   font-family: Exo, monospace;
@@ -19,8 +19,6 @@ body {
   align-items: center;
   width: 100%;
   background: repeating-linear-gradient(315deg, #262626 0px, #303030 40px, #262626 40px, #303030 80px); }
-  .header .whiteSpace {
-    width: 30%; }
   .header nav {
     width: 30%;
     height: 100%; }
@@ -33,40 +31,36 @@ body {
         width: 120px;
         padding-top: 9px; }
 
-#idioma {
-  width: 30%;
-  display: flex;
-  justify-content: flex-end;
-  font-family: Exo, monospace;
-  height: 30%; }
-  #idioma .enunciado {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: relative;
-    right: 0.7rem;
-    width: 50%; }
-    #idioma .enunciado .enunIdioma {
-      color: #f0f0f0; }
-  #idioma #seleccionIdioma {
-    font-family: Exo, monospace;
-    display: block;
-    width: 35%;
-    height: 100%; }
-
 .main {
   grid-area: main;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-around; }
+  justify-content: space-around;
+  width: 100vw;
+  height: 100%; }
+
+.mainBusqueda {
+  display: grid;
+  grid-template-columns: 100%;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%; }
+
+.busquedaBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .form {
   display: flex;
   border-radius: 5px;
   background-color: rgba(240, 240, 240, 0.9);
-  height: 40%;
-  width: 30%;
+  height: 30%;
+  width: 40%;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
@@ -86,25 +80,22 @@ body {
   background-color: #e9692e;
   font-family: Exo, monospace; }
 
+.descripcionBox {
+  display: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 #descripcion {
   display: none;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   font-size: 0.8rem;
-  width: 30%;
-  height: auto;
-  border-radius: 5px;
-  background-color: rgba(240, 240, 240, 0.9); }
-
-#descripcionEng {
-  display: none;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 0.8rem;
-  width: 30%;
-  height: auto;
+  width: 80%;
+  height: 80%;
   border-radius: 5px;
   background-color: rgba(240, 240, 240, 0.9); }
 
@@ -115,20 +106,15 @@ body {
   #imagenPokemon img {
     width: 100%; }
 
-#imagenPokemonEng {
-  border-radius: 4px;
-  width: 35%;
-  height: auto; }
-  #imagenPokemonEng img {
-    width: 100%; }
-
 #caracteristicas {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  width: 100%;
-  height: 50%;
+  width: 92%;
+  height: 30%;
+  background-color: #f8f6f6;
+  border-radius: 5px;
   list-style: none;
   padding-left: 0.5rem;
   padding-bottom: 0.3rem; }
@@ -137,24 +123,6 @@ body {
     justify-content: flex-start;
     font-weight: bold; }
     #caracteristicas li p {
-      padding-left: 4px;
-      font-weight: 100; }
-
-#caracteristicasEng {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-  width: 100%;
-  height: 50%;
-  list-style: none;
-  padding-left: 0.5rem;
-  padding-bottom: 0.3rem; }
-  #caracteristicasEng li {
-    display: flex;
-    justify-content: flex-start;
-    font-weight: bold; }
-    #caracteristicasEng li p {
       padding-left: 4px;
       font-weight: 100; }
 
