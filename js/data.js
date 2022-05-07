@@ -27,6 +27,6 @@ class pokemon { //Clase para el objeto Pokémon
     }
 };
 
-function capitalizeFirstLetter(string) { //Función para volver mayúscula la primera letra de un string
+export function capitalizeFirstLetter(string) { //Función para volver mayúscula la primera letra de un string
   return string.charAt(0).toUpperCase() + string.slice(1);
 }

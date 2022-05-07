@@ -6,12 +6,11 @@
 
 body {
   display: grid;
-  grid-template-areas: "header" "main" "footer";
-  grid-template-rows: 12% auto 7%;
+  grid-template-areas: "header"  "main"  "footer";
+  grid-template-rows: 12% auto 0%;
   width: 100vw;
   height: 100vh;
-  font-family: Exo, monospace;
-  background-image: url(../images/fondo.jpg); }
+  font-family: Exo, monospace; }
 
 .header {
   display: flex;
@@ -34,11 +33,10 @@ body {
 .main {
   grid-area: main;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  width: 100vw;
-  height: 100%; }
+  justify-content: space-evenly;
+  width: 100%; }
 
 .mainBusqueda {
   display: grid;
@@ -46,7 +44,8 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%; }
+  height: 32rem;
+  background-image: url(../images/pokemon-party.jpg); }
 
 .busquedaBox {
   width: 100%;
@@ -59,8 +58,8 @@ body {
   display: flex;
   border-radius: 5px;
   background-color: rgba(240, 240, 240, 0.9);
-  height: 30%;
-  width: 40%;
+  height: 35%;
+  width: 30%;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
@@ -95,7 +94,7 @@ body {
   align-items: center;
   font-size: 0.8rem;
   width: 80%;
-  height: 80%;
+  height: 73%;
   border-radius: 5px;
   background-color: rgba(240, 240, 240, 0.9); }
 
@@ -125,6 +124,79 @@ body {
     #caracteristicas li p {
       padding-left: 4px;
       font-weight: 100; }
+
+#listado {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #f0f0f0;
+  width: 100%; }
+
+.espacioUno {
+  justify-self: flex-start;
+  width: 13%;
+  background-color: #fbfbfb; }
+
+.espacioDos {
+  justify-self: flex-end;
+  width: 13%;
+  background-color: #fbfbfb; }
+
+.cajaPokemones {
+  width: 74%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.7rem;
+  background-color: #eae8e8; }
+
+#listaPoke {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-rows: auto;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #eae8e8;
+  height: auto; }
+
+#cargaMas {
+  display: none;
+  width: 30%;
+  font-family: Exo, monospace;
+  background-color: #e9692e;
+  border: transparent;
+  border-radius: 5px;
+  height: 1.8rem;
+  margin-top: 1rem; }
+
+.pokeCard {
+  display: flex;
+  flex-direction: column;
+  background-color: #f3efef;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 10rem;
+  padding-top: 0.5rem; }
+  .pokeCard:hover {
+    transform: scale(1.02); }
+  .pokeCard .imgPeque {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .pokeCard .imgPeque img {
+      width: 45%; }
+  .pokeCard .nombrePeque {
+    width: 100%;
+    height: 20%;
+    font-family: Exo, monospace;
+    font-size: 0.8rem;
+    text-align: center; }
 
 .footer {
   grid-area: footer;
