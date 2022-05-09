@@ -123,9 +123,26 @@ body {
     //border: solid 1px rgb(99, 99, 99);
     font-size: 0.8rem;
     width: 80%;
-    height: 73%;
+    height: 77%;
     border-radius: 5px;
     background-color: rgba($color: #f0f0f0, $alpha: 0.9);
+}
+#favStar {
+    width: 100%;
+    height: 10%;
+    //border: solid 1px red;
+    display: flex;
+    justify-content: end;
+    .starCaja {
+    //border: solid 1px red;
+    display: flex;
+    justify-content: center;
+    width: 12%;
+    height: auto;
+    img {
+        width: 60%;
+    }
+    }
 }
 #imagenPokemon {
     //background-color: #262626;
@@ -172,12 +189,24 @@ body {
 .espacioUno {
     justify-self: flex-start;
     width: 13%;
-    background-color: #fbfbfb;
+    //background-color: #fbfbfb;
+    background: #fbfbfb;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #FFFFFF, #6DD5FA, #4f99ca);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #FFFFFF, #6DD5FA, #4f99ca);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .espacioDos {
     justify-self: flex-end;
     width: 13%;
-    background-color: #fbfbfb;
+    //background-color: #fbfbfb;
+    background: #2980B9;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #FFFFFF, #6DD5FA, #4f99ca);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #FFFFFF, #6DD5FA, #4f99ca);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .cajaPokemones {
     width: 74%;
@@ -187,6 +216,18 @@ body {
     align-items: center;
     padding: 0.7rem;
     background-color: rgb(234, 232, 232);
+}
+.listaTitulo {
+    justify-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0.5rem;
+    .listHead {
+        align-self: flex-start;
+        border-bottom: solid 1px #e9692e;
+        width: 50%;
+    }
 }
 #listaPoke {
     display: grid;

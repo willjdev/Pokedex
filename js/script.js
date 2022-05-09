@@ -25,6 +25,7 @@ let botonCarga = document.getElementById("cargaMas");
 
 //EVENTOS
 
+
 boton.onclick = verificarEntrada; //Mostrará los resultados de la busqueda 
 
 entradaUsuario.addEventListener("keypress", function(key) {//activará la búsqueda cuando el usuario presione ENTER
@@ -54,6 +55,7 @@ function verificarEntrada() { //Función que verifica los datos que ingrese el u
 
         entrada = LISTA_POKEMONES.find((el) => el.nombre.toUpperCase() === entradaUsuario.value.toUpperCase());
         if(entrada != undefined) {
+            
             columnas();
             const resultado = LISTA_POKEMONES.filter((el) => el.nombre.toUpperCase().includes(entradaUsuario.value.toUpperCase()));
     
@@ -72,6 +74,7 @@ function verificarEntrada() { //Función que verifica los datos que ingrese el u
     
             //Se modifica el atributo src al elemento img con la imagen del Pokémon buscado
             document.getElementById("imagen").src = objeto.imagen;
+
             
             //Se cambia a invisible el cuadro con las caracteristicas de cada Pokémon, es decir, los valores del objeto
             descripcion.style.display = "flex";
@@ -118,9 +121,4 @@ function esperaListado () {
         })
     }, 2000);
 };
-
-
-
-
-
 
